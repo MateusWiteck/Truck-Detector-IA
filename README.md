@@ -2,7 +2,6 @@
 Utiliza visão computacional para detectar e registra a passagem de um caminhão por uma via em que o tráfego do mesmo é proibido.
 
 ## Introdução:
-* Este projeto ainda não chegou ao seu modelo final
 
 Esse script foi usado para monitorar o tráfego de caminhões em uma via onde o tráfego dos mesmos é expressamente proibido. A intenção nunca foi punir os condutores, mas sim coletar dados de modo que eles fossem usados para sensibilizar o poder público a tomar medidas com relação ao problema enfrentado pela comunidade. As Fotos que foram retiradas não serão publicisadas aqui, mas falarei sobre os resultados obtidos.
 Que fique claro também que se trata de um projeto amador e esta publicação serve para registrar os conhecimentos adiquiridos na elaboração do algoritimo.
@@ -25,10 +24,15 @@ Em 16 horas ligado o algoritimo coletou 220 (verdadeiros positivos) fotos de cam
 
 Para seu uso pouco exigente o algoritimo se saiu bem, mas possui ainda muitos defeitos que serão enumerados a seguir:
 Quanto ao meu código:
+
 1- O algoritimo repete fotos dos mesmos caminhões. Por ter utilizado apenas uma restrição de tempo, caminhöes que demoravam a cruzar toda a extensão da câmera eram fotografados duas ou até três vezes.
+
 2- por conta do algoritimo continuar reconhecendo veiculos estacionados tive de trabalhar para que o algoritimo parasse de tirar fotos dos mesmos, a solução implementada reduz drasticamente o número de fotos porém não resolve o problema por completo.
-3- O código está desorganizado e de difícil compreensão (working...)
+
 Quanto ao haarcascades utilizado:
+
 1- O haarcascades utilizado não diferencia caminhões de vans e caminhonetes grandes, principalmente escuras.
+
 2- Há angulos que qualquer veiculo é um caminhão
+
 3- Caminhões com cor poxima a cor de terra são ignorados
